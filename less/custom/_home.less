@@ -1,0 +1,96 @@
+.video-container {
+    min-height: 480px;
+}
+.embed-video-bg {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    //min-width: 100%;
+    min-height: 480px;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.showcase-block {
+    //min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    &.margin-negative {
+        margin-top: -60px;
+        padding-bottom: 60px;
+    }
+}
+
+.payoff-claim-block {
+    max-width: 500px;
+    margin:0 auto;
+    overflow: hidden;
+    text-align:center;
+    padding:70px 0;
+}
+
+.gas-images {
+    max-width: 294px;
+    margin:0 auto;
+    .img-block-1, .img-block-2 {
+        width: 147px;
+        height: 100px;
+        float: left;
+        background-size: cover;
+        transition: background-image 400ms ease-in;
+    }
+    .img-block-1 {
+        background-image: url('img/luceOFF.png');
+        &:hover {
+            background-image: url('img/luceON.png');
+        }
+    }
+    .img-block-2 {
+        background-image: url('img/gasOFF.png');
+        &:hover {
+            background-image: url('img/gasON.png');
+        }
+    }
+}
+
+.equal-blocks {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.text-block {
+    text-align: center;
+}
+
+.green-bg {
+    background: @green-bg;
+    padding:60px 0;    
+    .text-block {
+        color: #fff;
+    }
+}
+
+.main-footer {
+    &.blue-bg {
+        background-color: @blue-bg;
+        color: #fff;
+    }
+    .footer-disclaimer {
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        max-width: 840px;
+        margin-top: 20px;
+        .footer-disclaimer-blocks {
+            float: left;
+            text-align: center;
+            margin-right: 10px;
+        }
+    }
+}

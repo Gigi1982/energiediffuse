@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+    .header {
+        .navbar {
+            background: transparent;
+            border: 0;
+            margin: 0 auto;
+            text-align: center;
+            transition: background 200ms ease-in;
+            .logo {
+                position: absolute;
+                left:25px;
+                opacity: 0;
+                transition: opacity 200ms ease-in;
+                width: 255px;
+            }
+            .initial-navbar {
+                display: inline-block;
+                float: none !important;
+                vertical-align: top;
+                > li {
+                    padding:32px 0;
+                    > a {
+                        font-family: 'proxima_nova_rgregular';
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        transition: color 200ms ease-in;
+                        &:hover {
+                            background: none;
+                            color:@blue-bg;
+                        }
+                    }
+
+                }
+            }
+            .button-top-container {
+                position: absolute;
+                right: 50px;
+                top:40px;
+                opacity: 0;
+                transition: opacity 200ms ease-in;
+            }
+        }
+        
+        &.bigHeader {
+            .logo {
+                opacity: 1;
+            }
+            .navbar {
+                background: #fff;
+                .initial-navbar {
+                    > li {
+                        > a {
+                            color:#000;
+                        }
+                    }
+                }
+            }
+            .button-top-container {
+                opacity: 1;
+            }
+        }
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
