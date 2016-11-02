@@ -1,14 +1,18 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
+            <footer class="showcase-block main-footer blue-bg">
+                <div class="container">
+                    <div class="footer-disclaimer">
+                        <h2 class="main-titles">VUOI CONOSCERCI <span class="Handwriting">meglio?</span></h2>
+                        <a href="#" class="btn btn-primary btn-lg">Contattaci</a>
+                    </div>
+                    <div class="footer-disclaimer">
+                        <div class="footer-disclaimer-blocks">© 2016 Energie Diffuse Srl. All rights reserved. | </div>
+                        <div class="footer-disclaimer-blocks">P.I. 01738080934 | </div>
+                        <div class="footer-disclaimer-blocks">
+                            <?php html5blank_nav_footer(); ?>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 			<!-- /footer -->
 
 		</div>

@@ -1,16 +1,70 @@
 @media (min-width: 768px) {
+    .home {
+        .header {
+            .navbar {
+                background: transparent;
+                transition: background 200ms ease-in;
+                .logo {
+                    opacity: 0;
+                    transition: opacity 200ms ease-in;
+                }
+                .initial-navbar {
+                    > li {
+                        > a {
+                            color: #fff;
+                            transition: color 200ms ease-in;
+                        }
+                    }
+                }
+                .button-top-container {
+                    //position: absolute;
+                    //right: 50px;
+                    //top:40px;
+                    opacity: 0;
+                    transition: opacity 200ms ease-in;
+                }
+            }
+
+            &.bigHeader {
+                .logo {
+                    opacity: 1;
+                }
+                .navbar {
+                    background: #fff;
+                    .initial-navbar {
+                        > li {
+                            > a {
+                                color:#000;
+                                transition: color 200ms ease-in;
+                                &:hover {
+                                    color:@link-hover;
+                                }
+                            }
+                             &.current-menu-item {
+                                > a {
+                                    color:@link-active;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button-top-container {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
     .header {
         .navbar {
-            background: transparent;
             border: 0;
             margin: 0 auto;
             text-align: center;
-            transition: background 200ms ease-in;
+            background: #fff;
             .logo {
                 position: absolute;
                 left:25px;
-                opacity: 0;
-                transition: opacity 200ms ease-in;
+                top: 6px;
                 width: 255px;
             }
             .initial-navbar {
@@ -23,46 +77,66 @@
                         font-family: 'proxima_nova_rgregular';
                         font-size: 14px;
                         text-transform: uppercase;
-                        color: #fff;
-                        transition: color 200ms ease-in;
+                        color:#000;
                         &:hover {
                             background: none;
-                            color:@blue-bg;
+                            color:@link-hover;
                         }
                     }
-
+                    &.current-menu-item {
+                        > a {
+                            color:@link-active;
+                        }
+                    }
                 }
             }
             .button-top-container {
                 position: absolute;
                 right: 50px;
                 top:40px;
-                opacity: 0;
-                transition: opacity 200ms ease-in;
             }
         }
         
-        &.bigHeader {
-            .logo {
-                opacity: 1;
-            }
-            .navbar {
-                background: #fff;
-                .initial-navbar {
-                    > li {
-                        > a {
-                            color:#000;
-                        }
-                    }
-                }
-            }
-            .button-top-container {
-                opacity: 1;
-            }
-        }
     }
+    
+    
+    
 
     .navbar .navbar-collapse {
         text-align: center;
+    }
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.menu-mobile-container {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: @blue-bg;
+    transform: translateY(-100%);
+    transition: transform 400ms ease-in;
+    ul {
+        >li {
+            display: block;
+            text-align: center;
+            > a {
+                color:#fff;
+            }
+        }
+        &.current-menu-item {
+            > a {
+                color:@link-active;
+            }
+        }
+    }
+}
+.mobmenu-open {
+    .menu-mobile-container {
+        transform: translateY(0);  
     }
 }

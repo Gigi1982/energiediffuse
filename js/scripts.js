@@ -12,8 +12,13 @@
              //>=, not <=
             if (scroll >= 420) {
                 //clearHeader, not clearheader - caps H
-                $(".header").addClass("bigHeader");
+                $(".home .header").addClass("bigHeader");
             } else {$(".header").removeClass("bigHeader");}
+        });
+        
+        $('.mobile-navbar').click(function(){
+            $('body').addClass('mobmenu-open');
+            return false;
         });
 		
 	});

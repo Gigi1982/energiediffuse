@@ -2,8 +2,8 @@
 
 <section class="showcase-block">
     <div class="container-fluid">
-        <div class="video-container">
-            <video class="embed-video-bg hidden-sm hidden-xs" autoplay muted>
+        <div class="video-container hidden-sm hidden-xs">
+            <video class="embed-video-bg" autoplay muted>
               <source src="<?php echo get_template_directory_uri(); ?>/img/video/header.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -64,7 +64,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
 </section>
 <section class="showcase-block margin-negative">
     <div class="container">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="four-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona01.png">
@@ -72,7 +72,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
                 <p><span class="subtitles">Operatore dedicato</span></p>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="four-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona02.png">
@@ -80,7 +80,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
                 <p><span class="subtitles">Analisi consumi</span></p>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="four-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona03.png">
@@ -88,7 +88,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
                 <p><span class="subtitles">Previsione costi futuri</span></p>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="four-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona04.png">
@@ -98,24 +98,4 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
         </div>
     </div>
 </section>
-<footer class="showcase-block main-footer blue-bg">
-    <div class="container">
-        <div class="footer-disclaimer">
-            <h2 class="main-titles">VUOI CONOSCERCI <span class="Handwriting">meglio?</span></h2>
-            <a href="#" class="btn btn-primary btn-lg">Contattaci</a>
-        </div>
-        <div class="footer-disclaimer">
-            <div class="footer-disclaimer-blocks">© 2016 Energie Diffuse Srl. All rights reserved. | </div>
-            <div class="footer-disclaimer-blocks">P.I. 01738080934 | </div>
-            <div class="footer-disclaimer-blocks">
-                <ul class="list-inline footer-nav">
-                    <li><a href="#">DISCLAIMER</a></li>
-                    <li><a href="#">PRIVACY POLICY</a></li>
-                    <li><a href="#">COOKIE POLICY</a></li>
-                    <li><a href="#">CONTATTI</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
+<?php get_footer(); ?>

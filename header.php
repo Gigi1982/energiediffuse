@@ -33,22 +33,25 @@
                     <div class="container">
 					<!-- nav -->
                         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                            <div class="navbar-header">
-                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <div class="navbar-header visible-xs visible-sm">
+                              <button type="button" class="mobile-navbar" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                               </button>
                             </div>
-                            <div class="logo">
+                            <div class="logo hidden-sm hidden-xs">
                                 <a href="<?php echo home_url(); ?>">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/logoMENU.png" alt="Logo" class="logo-img">
                                 </a>
                            </div>
-                            <?php html5blank_nav(); ?>
-                             <div class="button-top-container">
+                            <div class="menu-desktop-container hidden-sm hidden-xs"><?php html5blank_nav(); ?></div>
+                             <div class="button-top-container hidden-sm hidden-xs">
                                 <a class="btn btn-primary" href="#">Contattaci</a>
+                            </div>
+                            <div class="menu-mobile-container visible-xs visible-sm">
+                                <?php html5blank_nav(); ?>
                             </div>
                         </nav>
                         
