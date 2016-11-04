@@ -2,14 +2,16 @@
 
 <section class="showcase-block">
     <div class="container-fluid">
-        <div class="video-container hidden-sm hidden-xs">
+        <div class="video-container visible-lg">
             <video class="embed-video-bg" autoplay muted>
               <source src="<?php echo get_template_directory_uri(); ?>/img/video/header.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </div>
-    <div class="mobile-header-bg visible-xs visible-sm" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/header_mobile.jpg')"></div>
+    <div class="mobile-header-bg hidden-lg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/header_bg.jpg')">
+        <div class="mobile-home-logo"><img width="350" height="155" src="<?php echo get_template_directory_uri(); ?>/img/header_logo.png"></div>
+    </div>
 </section>
 <section class="showcase-block">
     <div class="container-fluid">
@@ -45,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 custom-container visible-lg">
         <video height="400" autoplay muted>
           <source src="<?php echo get_template_directory_uri(); ?>/img/video/animation.mp4" type="video/mp4">
             Your browser does not support the video tag.
