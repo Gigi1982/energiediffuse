@@ -34,12 +34,7 @@
 					<!-- nav -->
                         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                             <div class="navbar-header visible-xs visible-sm">
-                              <button type="button" class="mobile-navbar" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                              </button>
+                              <a href="#" class="mobile-navbar"><i class="fa fa-bars fa-2x"></i></a>
                             </div>
                             <div class="logo hidden-sm hidden-xs">
                                 <a href="<?php echo home_url(); ?>">
@@ -51,12 +46,7 @@
                                 <a class="btn btn-primary" href="#">Contattaci</a>
                             </div>
                             <div class="menu-mobile-container visible-xs visible-sm">
-                                <button type="button" class="close-navbar" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
+                                <a href="#" class="close-navbar"><i class="fa fa-times fa-2x"></i></a>
                                 <?php html5blank_nav(); ?>
                             </div>
                         </nav>

@@ -9,7 +9,7 @@
             </video>
         </div>
     </div>
-    <div class="mobile-header-bg visible-xs visible-sm"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/header_mobile.jpg"></div>
+    <div class="mobile-header-bg visible-xs visible-sm" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/header_mobile.jpg')"></div>
 </section>
 <section class="showcase-block">
     <div class="container-fluid">
