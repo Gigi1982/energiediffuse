@@ -15,5 +15,44 @@ Finoil S.p.A. è una società holding che raggruppa oltre che le quote di Arquat
 
 G&B gestisce la distribuzione di prodotti correlati all’energia che Energie Diffuse venderà sul mercato. Questo per mantenere separate le attività di distribuzione da quelle della vendita più consone alle esperienze e all’organizzazione di Energie Diffuse. Tra i prodotti distribuiti si possono elencare: la Domotica, il LightBringer, i prodotti Lampade a risparmio energetico.</p>
         </section>
+        <section class="internal-page-content">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="icon-blocks-container">
+                    <div class="rounded-png">
+                        <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona01-wiki.png">
+                    </div>
+                    <p><span class="subtitles">Operatore dedicato</span></p>
+                    <p>Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="icon-blocks-container">
+                    <div class="rounded-png">
+                        <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona02-wiki.png">
+                    </div>
+                    <p><span class="subtitles">Analisi consumi</span></p>
+                    <p>Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="icon-blocks-container">
+                    <div class="rounded-png">
+                        <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona03-wiki.png">
+                    </div>
+                    <p><span class="subtitles">Previsione costi futuri</span></p>
+                    <p>Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="icon-blocks-container">
+                    <div class="rounded-png">
+                        <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona04-wiki.png">
+                    </div>
+                    <p><span class="subtitles">Autolettura</span></p>
+                    <p>Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo Testo testo testo testo testo testo </p>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
+<?php get_footer(); ?>

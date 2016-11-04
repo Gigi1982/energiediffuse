@@ -3,6 +3,7 @@
         .header {
             .navbar {
                 background: transparent;
+                border-bottom: 1px solid transparent;
                 transition: background 200ms ease-in;
                 .logo {
                     opacity: 0;
@@ -31,6 +32,7 @@
                 }
                 .navbar {
                     background: #fff;
+                    border-bottom: 1px solid @border-bg;
                     .initial-navbar {
                         > li {
                             > a {
@@ -61,6 +63,7 @@
             margin: 0 auto;
             text-align: center;
             background: #fff;
+            border-bottom: 1px solid @border-bg;
             .logo {
                 position: absolute;
                 left:25px;
@@ -96,7 +99,6 @@
                 top:40px;
             }
         }
-        
     }
     
     
@@ -109,6 +111,9 @@
 
 .navbar-default {
     background-color: transparent;
+    @media screen and (max-width:@screen-sm) {
+        border-color: transparent;
+    }
 }
 
 .menu-mobile-container {
@@ -120,12 +125,17 @@
     background-color: @blue-bg;
     transform: translateY(-100%);
     transition: transform 400ms ease-in;
-    ul {
+    ul.navbar-nav {
+        position: absolute;
+        top:50%;
+        left:50%;
+        .translate(-50%,-50%);
         >li {
             display: block;
             text-align: center;
             > a {
                 color:#fff;
+                text-transform: uppercase;
             }
         }
         &.current-menu-item {

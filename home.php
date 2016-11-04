@@ -9,6 +9,7 @@
             </video>
         </div>
     </div>
+    <div class="mobile-header-bg visible-xs visible-sm"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/header_mobile.jpg"></div>
 </section>
 <section class="showcase-block">
     <div class="container-fluid">
@@ -65,7 +66,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
 <section class="showcase-block margin-negative">
     <div class="container">
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="four-blocks-container">
+            <div class="icon-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona01.png">
                 </div>
@@ -73,7 +74,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
             </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="four-blocks-container">
+            <div class="icon-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona02.png">
                 </div>
@@ -81,7 +82,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
             </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="four-blocks-container">
+            <div class="icon-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona03.png">
                 </div>
@@ -89,7 +90,7 @@ Nella la tua area personale sul web avrai strumenti di controllo e offerte "prem
             </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="four-blocks-container">
+            <div class="icon-blocks-container">
                 <div class="rounded-png">
                     <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona04.png">
                 </div>

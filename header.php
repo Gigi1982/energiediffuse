@@ -51,6 +51,12 @@
                                 <a class="btn btn-primary" href="#">Contattaci</a>
                             </div>
                             <div class="menu-mobile-container visible-xs visible-sm">
+                                <button type="button" class="close-navbar" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
                                 <?php html5blank_nav(); ?>
                             </div>
                         </nav>

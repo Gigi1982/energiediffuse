@@ -20,6 +20,11 @@
             $('body').addClass('mobmenu-open');
             return false;
         });
+        
+        $('.close-navbar').click(function(){
+            $('body').removeClass('mobmenu-open');
+            return false;
+        });
 		
 	});
 	
