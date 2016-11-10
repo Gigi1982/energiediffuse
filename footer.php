@@ -5,8 +5,8 @@
                         <a href="#" class="btn btn-primary btn-lg">Contattaci</a>
                     </div>
                     <div class="footer-disclaimer">
-                        <div class="footer-disclaimer-blocks">© 2016 Energie Diffuse Srl. All rights reserved. | </div>
-                        <div class="footer-disclaimer-blocks">P.I. 01738080934 | </div>
+                        <div class="footer-disclaimer-blocks">© 2016 Energie Diffuse Srl. All rights reserved </div>
+                        <div class="footer-disclaimer-blocks">P.I. 01738080934</div>
                         <div class="footer-disclaimer-blocks">
                             <?php html5blank_nav_footer(); ?>
                         </div>

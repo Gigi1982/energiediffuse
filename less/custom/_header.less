@@ -113,6 +113,13 @@
     background-color: transparent;
     @media screen and (max-width:@screen-sm) {
         border-color: transparent;
+        .navbar-header {
+            padding-left: 10px;
+            padding-top: 10px;
+            .mobile-navbar {
+                color:#fff;
+            }
+        }
     }
 }
 
@@ -144,9 +151,51 @@
             }
         }
     }
+    .close-navbar {
+        padding-left: 10px;
+        padding-top: 10px;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+    }
 }
 .mobmenu-open {
     .menu-mobile-container {
         transform: translateY(0);  
+    }
+}
+
+.page {
+    .navbar-default .navbar-header {
+        .mobile-navbar {
+            color:@blue-bg;
+        }
+    }
+}
+
+.home {
+    .navbar-default .navbar-header {
+        .mobile-navbar {
+            color:#fff;
+        }
+    }
+    .contact-mobile-button {
+        position: fixed;
+        right:30px;
+        top:20px;
+        > a {
+            color: #fff;
+            > span {
+                background: #fff;
+                border-radius: 30px;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                > i {
+                    color: @blue-bg;
+                }
+            }
+        }
     }
 }

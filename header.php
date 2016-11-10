@@ -49,6 +49,9 @@
                                 <a href="#" class="close-navbar"><i class="fa fa-times fa-2x"></i></a>
                                 <?php html5blank_nav(); ?>
                             </div>
+                            <div class="contact-mobile-button visible-xs visible-sm">
+                                <a href="#" class="contact">Contattaci<span><i class="fa fa-paper-plane"></i></span></a>
+                            </div>
                         </nav>
                         
                     </div>

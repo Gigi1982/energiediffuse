@@ -53,6 +53,7 @@
             Your browser does not support the video tag.
         </video>
     </div>
+    <div class="animation-container hidden-lg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/animation_mobile.jpg')"></div>
 </section>
 <section class="showcase-block green-bg">
     <div class="container">
