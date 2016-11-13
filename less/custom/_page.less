@@ -1,5 +1,5 @@
 .internal-page-block {
-    padding-top: 94px;
+    padding-top: 30px;
     .internal-page-header {
         min-height: 120px;
         background-size: cover;
@@ -12,11 +12,17 @@
     .internal-page-content {
         padding: 70px 0;
         overflow: hidden;
+        .wiki-blocks {
+            min-height: 348px;
+        }
     }
     .icon-blocks-container {
         text-align: center;
         .rounded-png {
             text-align: center;
         }
+    }
+    @media screen and (min-width:@screen-sm) {
+        padding-top: 94px;
     }
 }

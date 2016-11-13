@@ -110,14 +110,46 @@
 }
 
 .navbar-default {
-    background-color: transparent;
+    background-color: #fff;
+    .navbar-header {
+        .mobile-navbar {
+            color:@blue-bg;
+        }
+    }
     @media screen and (max-width:@screen-sm) {
         border-color: transparent;
+        background-color: @blue-bg;
         .navbar-header {
             padding-left: 10px;
             padding-top: 10px;
             .mobile-navbar {
                 color:#fff;
+                padding-left: 10px;
+            }
+        }
+    }
+     .mobile-navbar {
+        color:@blue-bg;
+    }
+    .contact-mobile-button {
+        position: fixed;
+        right:30px;
+        top:20px;
+        > a {
+            color: #fff;
+            font-family: 'proxima_nova_rgbold';
+            text-transform: uppercase;
+            font-size: 14px;
+            > span {
+                background: #fff;
+                border-radius: 30px;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                > i {
+                    color: @blue-bg;
+                }
             }
         }
     }
@@ -143,6 +175,7 @@
             > a {
                 color:#fff;
                 text-transform: uppercase;
+                font-size: 16px;
             }
         }
         &.current-menu-item {
@@ -162,40 +195,5 @@
 .mobmenu-open {
     .menu-mobile-container {
         transform: translateY(0);  
-    }
-}
-
-.page {
-    .navbar-default .navbar-header {
-        .mobile-navbar {
-            color:@blue-bg;
-        }
-    }
-}
-
-.home {
-    .navbar-default .navbar-header {
-        .mobile-navbar {
-            color:#fff;
-        }
-    }
-    .contact-mobile-button {
-        position: fixed;
-        right:30px;
-        top:20px;
-        > a {
-            color: #fff;
-            > span {
-                background: #fff;
-                border-radius: 30px;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                margin-left: 10px;
-                > i {
-                    color: @blue-bg;
-                }
-            }
-        }
     }
 }

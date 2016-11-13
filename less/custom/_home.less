@@ -15,6 +15,12 @@
     background-size: cover;
 }
 
+.rounded-png {
+    > img {
+        margin: 0 auto;
+    }
+}
+
 .showcase-block {
     //min-height: 200px;
     overflow: hidden;
@@ -25,7 +31,7 @@
         padding-bottom: 60px;
     }
     .custom-container {
-        padding-bottom: 36.25% !important;
+        //padding-bottom: 36.25% !important;
     }
 }
 
@@ -41,20 +47,22 @@
     max-width: 294px;
     margin:0 auto;
     .img-block-1, .img-block-2 {
-        width: 147px;
-        height: 100px;
         float: left;
         background-size: cover;
         transition: background-image 400ms ease-in;
     }
     .img-block-1 {
         background-image: url('img/luceOFF.png');
+        width: 80px;
+        height: 100px;
         &:hover {
             background-image: url('img/luceON.png');
         }
     }
     .img-block-2 {
         background-image: url('img/gasOFF.png');
+        width: 147px;
+        height: 100px;
         &:hover {
             background-image: url('img/gasON.png');
         }
@@ -119,9 +127,6 @@
 }
 
 .animation-container {
-    background-size: cover;
-    min-height: 1212px;
-    max-width: 500px;
     margin: 0 auto;
 }
 

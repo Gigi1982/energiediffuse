@@ -41,7 +41,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/logoMENU.png" alt="Logo" class="logo-img">
                                 </a>
                            </div>
-                            <div class="menu-desktop-container hidden-sm hidden-xs"><?php html5blank_nav(); ?></div>
+                            <div class="menu-desktop-container visible-lg visible-md"><?php html5blank_nav(); ?></div>
                              <div class="button-top-container hidden-sm hidden-xs">
                                 <a class="btn btn-primary" href="#">Contattaci</a>
                             </div>

@@ -22,7 +22,7 @@
                     <div class="img-block-2"></div>
                 </header>
                 <div class="payoff-text">
-                    <h2 class="main-payoff ProximaRegular">La fornitura di luce e gas che risponde a tutte le tue necessità di <span class="Handwriting">comfort</span></h2>
+                    <h2 class="main-payoff ProximaRegular"><?php the_field('first_claim_text'); ?><span class="Handwriting"><?php the_field('first_claim_text_corsivo'); ?></span></h2>
                 </div>
             </div>
         </div>
@@ -32,72 +32,66 @@
     <div class="container">
         <div class="col-md-6">
             <div class="equal-blocks">
-                <h2 class="main-titles">ENERGIA FULL-OPTIONAL</h2>
-                <p>Integra il tuo contratto energetico con prodotti
-    e servizi utili nella tua vita di ogni giorno.
-    Dalla green energy alla sicurezza, il benessere che desideri.</p>
+                <h2 class="main-titles"><?php the_field('second_block_left_title'); ?></h2>
+                <p><?php the_field('second_block_left_text'); ?></p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="equal-blocks">
-                <h2 class="main-titles">MASSIMA COMODITÀ</h2>
-                <p>Tutti i tuoi servizi in un'unica bolletta.
-    La gestione di casa o della tua azienda diventa
-    finalmente qualcosa di comodo e facile.</p>
+                <h2 class="main-titles"><?php the_field('third_block_left_title'); ?></h2>
+                <p><?php the_field('third_block_left_text'); ?></p>
             </div>
         </div>
     </div>
-    <div class="embed-responsive embed-responsive-16by9 custom-container visible-lg">
-        <video height="400" autoplay muted>
+    <div class="custom-container visible-lg">
+        <video class="animation" height="380" autoplay loop muted>
           <source src="<?php echo get_template_directory_uri(); ?>/img/video/animation.mp4" type="video/mp4">
+            <source src="<?php echo get_template_directory_uri(); ?>/img/video/animation.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
     </div>
-    <div class="animation-container hidden-lg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/animation_mobile.jpg')"></div>
+    <div class="animation-container hidden-lg"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/animation_mobile.jpg"></div>
 </section>
 <section class="showcase-block green-bg">
     <div class="container">
         <div class="text-block">
-            <h2 class="main-titles">SEMPLICE, AMICA, VICINA: LA <span class="Handwriting">tua</span> ENERGIA</h2>
-            <p>In <b>Energie Diffuse</b> parliamo la tua lingua e capiamo le tue esigenze. Non parlerai mai con un risponditore automatico o un operatore straniero.<br>
-<b>Energie Diffuse</b> ti assegna un singolo operatore dedicato, al tuo fianco per tutta la durata del contratto di fornitura.<br>
-
-Nella la tua area personale sul web avrai strumenti di controllo e offerte "premium" a tua disposizione..</p>
+            <h2 class="main-titles"><?php the_field('green_bg_white_title'); ?></h2>
+            <p><?php the_field('green_bg_white_text'); ?></p>
         </div>
     </div>
 </section>
 <section class="showcase-block margin-negative">
     <div class="container">
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="icon-blocks-container">
                 <div class="rounded-png">
-                    <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona01.png">
+                    <?php echo '<img class="img-responsive" width="198" height="198" src="'.get_field('text_block_img_1').'">' ?>
                 </div>
-                <p><span class="subtitles">Operatore dedicato</span></p>
+                <p><span class="subtitles"><?php the_field('text_block_title_1'); ?></span></p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="icon-blocks-container">
                 <div class="rounded-png">
-                    <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona02.png">
+                    <?php echo '<img class="img-responsive" width="198" height="198" src="'.get_field('text_block_img_2').'">' ?>
                 </div>
-                <p><span class="subtitles">Analisi consumi</span></p>
+                <p><span class="subtitles"><?php the_field('text_block_title_2'); ?></span></p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="icon-blocks-container">
                 <div class="rounded-png">
-                    <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona03.png">
+                    <?php echo '<img class="img-responsive" width="198" height="198" src="'.get_field('text_block_img_3').'">' ?>
                 </div>
-                <p><span class="subtitles">Previsione costi futuri</span></p>
+                <p><span class="subtitles"><?php the_field('text_block_title_3'); ?></span></p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="icon-blocks-container">
                 <div class="rounded-png">
-                    <img width="198" height="198" src="<?php echo get_template_directory_uri(); ?>/img/icona04.png">
+                    <?php echo '<img class="img-responsive" width="198" height="198" src="'.get_field('text_block_img_4').'">' ?>
                 </div>
-                <p><span class="subtitles">Autolettura</span></p>
+                <p><span class="subtitles"><?php the_field('text_block_title_4'); ?></span></p>
             </div>
         </div>
     </div>
