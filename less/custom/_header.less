@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .home {
         .header {
             .navbar {
@@ -111,19 +111,19 @@
 
 .navbar-default {
     background-color: #fff;
+    border-color: transparent;
+    background-color: @blue-bg;
     .navbar-header {
+        padding-left: 10px;
+        padding-top: 10px;
         .mobile-navbar {
-            color:@blue-bg;
+            color:#fff;
         }
     }
-    @media screen and (max-width:@screen-sm) {
-        border-color: transparent;
-        background-color: @blue-bg;
+    @media screen and (min-width:769px) {        
         .navbar-header {
-            padding-left: 10px;
-            padding-top: 10px;
             .mobile-navbar {
-                color:#fff;
+                color:@blue-bg;
                 padding-left: 10px;
             }
         }
@@ -134,7 +134,7 @@
     .contact-mobile-button {
         position: fixed;
         right:30px;
-        top:20px;
+        top:12px;
         > a {
             color: #fff;
             font-family: 'proxima_nova_rgbold';
@@ -144,11 +144,14 @@
                 background: #fff;
                 border-radius: 30px;
                 display: inline-block;
-                width: 20px;
-                height: 20px;
+                width: 30px;
+                height: 30px;
                 margin-left: 10px;
+                line-height: 30px;
                 > i {
                     color: @blue-bg;
+                    position: relative;
+                    left: 7px;
                 }
             }
         }
@@ -161,6 +164,7 @@
     bottom:0;
     left:0;
     right:0;
+    z-index: 2;
     background-color: @blue-bg;
     transform: translateY(-100%);
     transition: transform 400ms ease-in;
@@ -172,6 +176,7 @@
         >li {
             display: block;
             text-align: center;
+            width: 100%;
             > a {
                 color:#fff;
                 text-transform: uppercase;

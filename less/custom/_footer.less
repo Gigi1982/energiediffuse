@@ -1,9 +1,27 @@
 .footer-menu {
+    margin-top: 35px;
     >li {
+        display: block;
+        width: 100%;
+        text-align: center;
         > a {
             color: #fff;
+            text-transform: uppercase;
+            padding:5px 0;
+            display: block;
         }
-    }   
+    }
+    @media screen and (min-width:769px) {
+        margin-top:0;
+        > li {
+            display: inline-block;
+            width: auto;
+            text-align: left;
+            > a {
+                padding:0;
+            }
+        }
+    }
 }
 
 .main-footer {

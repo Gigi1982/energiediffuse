@@ -12,8 +12,11 @@
     .internal-page-content {
         padding: 70px 0;
         overflow: hidden;
+        a {
+            color: @green-bg;
+        }
         .wiki-blocks {
-            min-height: 348px;
+            min-height: 400px;
         }
     }
     .icon-blocks-container {
@@ -22,7 +25,7 @@
             text-align: center;
         }
     }
-    @media screen and (min-width:@screen-sm) {
+    @media screen and (min-width:@screen-sm-max) {
         padding-top: 94px;
     }
 }

@@ -50,7 +50,8 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    <div class="animation-container hidden-lg"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/animation_mobile.jpg"></div>
+    <div class="animation-container visible-sm visible-xs"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/animation_mobile.jpg"></div>
+    <div class="animation-container visible-md"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/animation_ipad.jpg"></div>
 </section>
 <section class="showcase-block green-bg">
     <div class="container">
